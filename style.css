@@ -1,0 +1,1172 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+.body {
+    max-width: 1500px;
+}
+
+
+/*Ne pas afficher cet élément(cet élément a été ajouté pour satisfaire les exigences du validateur html*/
+
+.à_ne_pas_afficher {
+    display: none;
+}
+
+
+/*Les éléments en gras sont affichés en noir*/
+
+b {
+    color: black;
+}
+
+
+/*Fixer la marge à gauche et à droite*/
+
+#Haut_de_page,
+header h3,
+header p,
+.Espace_de_recherche,
+.Filtres,
+.info,
+#Hébergments_Les_plus_populaires,
+#Activitées {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+/*Haut de page contenant le logo booki et le nav Herbergment + activitées*/
+
+
+/*Rétrécissement du LOGO BOOKi*/
+
+#Haut_de_page img {
+    height: 60px;
+}
+
+
+/*Navigateur*/
+
+nav {
+    width: 300px;
+    height: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+nav a {
+    width: 150px;
+    text-align: center;
+    height: 10px;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    margin-top: 0px;
+    padding-top: 10%;
+    /*Padding ajouté pour pour pouvoir affficher la barre bleu correctement*/
+}
+
+
+/*Effet au survol, barre bleu + texte bleu*/
+
+nav a:hover {
+    border-top: 1px #0065FC solid;
+    color: #0065FC;
+}
+
+
+/*Afficher les filtres sur la même ligne*/
+
+.Filtres_sans_h2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    justify-content: space-between;
+}
+
+.Titre-Filtres {
+    align-self: center;
+}
+
+
+/*Logos pour chaque filtre*/
+
+.Filtres i {
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-top: 0px;
+    margin-left: -2px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.Economique,
+.Familiale,
+.Romantique,
+.Animaux_autorisés {
+    display: flex;
+    border: lightgray solid 2px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+
+/*Ne pas surigner et afficher en violet les liens*/
+
+.Filtres a {
+    text-decoration: none;
+    color: black;
+}
+
+.Filtres a:hover {
+    color: #0065FC;
+}
+
+.Filtres h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: medium;
+}
+
+i {
+    display: flex;
+    align-items: center;
+    color: #0065FC;
+}
+
+
+/*Espace de recherche*/
+
+
+/*Mettre sur la même ligne les élements de l'espace de recherche */
+
+.Espace_de_recherche {
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+
+/*Mise en forme et positionnement du logo "localisation" */
+
+.loca {
+    width: 45px;
+    padding-left: 18px;
+    padding-top: 15px;
+    color: black;
+    background-color: #F2F2F2;
+    height: 50px;
+    margin-right: -2px;
+    border-radius: 18% 0% 0% 18%;
+}
+
+
+/*Formulaire*/
+
+form {
+    display: flex;
+}
+
+form input {
+    border: 1px solid #F2F2F2;
+    height: 50px;
+    margin-left: -12px;
+    margin-right: -12px;
+    font-weight: bold;
+    width: 230px;
+}
+
+
+/*Couleur du placeholder de gris à noir*/
+
+::placeholder {
+    color: black;
+}
+
+
+/*Bouton de recherche */
+
+.Bouton_de_recherche_Bleu {
+    width: 150px;
+    border: 0px;
+    background-color: #0065FC;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Espace_de_recherche a {
+    align-self: center;
+}
+
+
+/*espace de recherche prévu pour téléphone*/
+
+.Espace_de_recherche_téléphone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.Espace_de_recherche_téléphone .loca {
+    width: 40px;
+    padding-left: 12px;
+}
+
+.Espace_de_recherche_téléphone .Bouton_de_recherche_Bleu {
+    width: 60px;
+    border-radius: 20%;
+}
+
+.Espace_de_recherche_téléphone a {
+    align-self: center;
+}
+
+.Espace_de_recherche_téléphone .Bouton_de_recherche_Bleu i {
+    color: white;
+}
+
+
+/*Espace information*/
+
+.info {
+    display: flex;
+    margin-left: 25px;
+    ;
+}
+
+.info i {
+    display: flex;
+    align-self: center;
+    margin-right: 5px;
+    color: #0065FC;
+    border: gray 1px solid;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    padding-left: 7px;
+    margin-bottom: 3px;
+}
+
+.info p {
+    margin-left: 0%;
+}
+
+
+/*Prix des nuits à afficher en noir*/
+
+b {
+    color: black;
+}
+
+
+/*Agrandir légerement les titres de niveau h2*/
+
+main h2 {
+    margin-left: 30px;
+    font-size: medium;
+}
+
+
+/*Hébergements*/
+
+#Hébergements h2,
+#Hébergements h5 {
+    font-weight: bold;
+}
+
+
+/*Mettre le fond gris en background et fixer la taille à 65%*/
+
+#Hébergements {
+    background-color: #F2F2F2;
+    width: 65%;
+    padding: 10px 20px 20px 40px;
+    border-radius: 5% 5% 5% 5%;
+}
+
+
+/*Positionnement des cartes dans hébergements*/
+
+.Hébergements_cartes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/*Style des cartes dans hébergements*/
+
+#Hébergements .carte {
+    width: 210px;
+    margin: 10px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#Hébergements .carte a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/*Effet au survol des cartes dans hébergements*/
+
+#Hébergements .carte:hover .carte-image img {
+    object-fit: contain;
+}
+
+
+/*Style des cartes dans hébergments*/
+
+#Hébergements .carte-image {
+    height: 65%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#Hébergements .carte-image img {
+    /*- Laisser une petite partie banche autour des images */
+    width: 98%;
+    height: 96%;
+    /*- Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px 15px 0px 0px;
+    /*ajuster la taillede l’image à son conteneur*/
+    object-fit: cover;
+}
+
+
+/*Corp de la carte*/
+
+#Hébergements .carte-corp {
+    text-align: center;
+    /*1*/
+    box-sizing: border-box;
+    /*3*/
+}
+
+#Hébergements .carte-titre {
+    text-align: center;
+    font-weight: bold;
+}
+
+#Hébergements h3,
+#Hébergements p,
+#Hébergements i {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: small;
+    text-align: left;
+    padding-left: 5%;
+}
+
+#Hébergements h3 {
+    font-size: small;
+}
+
+#Hébergements p {
+    font-size: 0.7em;
+}
+
+#Hébergements .Prix-nuit {
+    color: #777;
+}
+
+.nb_étoile {
+    margin-left: 0px;
+    display: flex;
+    font-size: 12px;
+}
+
+#Hébergements .nb_étoile {
+    margin-top: -2px;
+}
+
+.nb_étoile i {
+    width: 16px;
+}
+
+.gris {
+    color: lightgray;
+}
+
+
+/*Les Plus Populaires*/
+
+
+/*Fixer largeur à 30% et ajout du fond gris*/
+
+#Les_plus_populaires {
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 5% 5% 5% 5%;
+    padding-top: 10px;
+}
+
+
+/*Affichage sur 1 colonne*/
+
+.cartes_Les_plus_populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+/*Introduction pour la section Populaire*/
+
+.intro_Les_plus_populaires {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1px;
+}
+
+.intro_Les_plus_populaires h2 {
+    height: max-content;
+}
+
+
+/*positionnement du logo chart line up grâce à des paddings*/
+
+.intro_Les_plus_populaires i {
+    color: black;
+    display: flex;
+    height: 10px;
+    align-self: center;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px 20px 5px 0px;
+    color: black;
+}
+
+
+/*Dimension des cartes de la section 
+Les plus populaires*/
+
+#Les_plus_populaires .carte_popu {
+    width: 85%;
+    margin: 15px;
+    height: 130px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px;
+    display: flex;
+}
+
+
+/*Width de 100% pour le lien pour ne aps gener les autres blocs imbriqué*/
+
+#Les_plus_populaires a {
+    /*5*/
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Positionnement et dimension de l'image dans les cartes*/
+
+#Les_plus_populaires .carte-image {
+    height: 100%;
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#Les_plus_populaires .carte-image img {
+    width: 98%;
+    height: 98%;
+    /*Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+}
+
+
+/*Apporter du dynamisme */
+
+#Les_plus_populaires .carte_popu:hover .carte-image img {
+    object-fit: contain;
+}
+
+#Les_plus_populaires .carte-corp {
+    text-align: center;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+#Les_plus_populaires .carte-titre {
+    text-align: center;
+    font-weight: bold;
+}
+
+#Les_plus_populaires h3,
+#Les_plus_populaires p,
+#Les_plus_populaires i {
+    text-align: left;
+    padding-left: 5%;
+}
+
+#Les_plus_populaires h3 {
+    font-size: small;
+}
+
+
+/*Margin bottom pour placer les étoiles plus bas*/
+
+#Les_plus_populaires p {
+    font-size: 0.7em;
+    margin-bottom: 30px;
+}
+
+#Les_plus_populaires .Prix-nuit {
+    color: #777;
+}
+
+
+/*Section Activitées*/
+
+
+/*Disposition des cartes dans la section activitées*/
+
+.Cartes_activitées {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+/*Les bloc 1 et 2 sont utile pour la version tablette*/
+
+.Activitées_bloc_1,
+.Activitées_bloc_2 {
+    display: flex;
+    width: 50%;
+}
+
+
+/*ne pas donner d'apparence aux liens(Note pour la prochaine fois : 
+Il aurait été plus pertinent de le faire une fois en début de fichier CSS*/
+
+#Activitées a {
+    color: #333;
+    text-decoration: none;
+}
+
+#Activitées .carte-titre {
+    height: 40px;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+#Activitées h3 {
+    font-size: 1em;
+}
+
+
+/*Creation des cartes pour lère et 3ème colonne ensemble(Elles sont identiques)*/
+
+.activitées_colonne_1,
+.activitées_colonne_3 {
+    width: 44%;
+    /*1*/
+    margin: 15px;
+    /*2*/
+    height: 440px;
+    background-color: white;
+    /*3*/
+    box-shadow: 0px 5px 20px #999;
+    /*4*/
+    border-radius: 15px 15px 15px 15px;
+}
+
+.carte_activitées .carte-image {
+    height: 400px;
+    /*1*/
+    position: relative;
+    /*2*/
+    overflow: hidden;
+    /*3*/
+    border-radius: 15px 15px 0px 0px;
+}
+
+#Activitées .carte-image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+
+/*Creation des cartes pour la 2ème colonne*/
+
+.activitées_colonne_2 {
+    width: 44%;
+    /*44% du bloc 1*/
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    /*Afin que les 2 cartes s'affichent dans la même colonne */
+    justify-content: space-between;
+}
+
+.carte_activitées_2_1 {
+    width: 100%;
+    /*1°°% de la conne 2*/
+    height: 235px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.carte_activitées_2_2 {
+    width: 100%;
+    /*100% de la colonne 2*/
+    height: 155px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+/*Creations des cartes de la 4ème colonne*/
+
+.activitées_colonne_4 {
+    width: 44%/*44% du bloc 2*/
+    ;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    /*Afin que les 2 cartes s'affichent dans la même colonne */
+    justify-content: space-between;
+}
+
+.carte_activitées_4_1,
+.carte_activitées_4_2 {
+    width: 100%;
+    /*1OO% de la colonne 4*/
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+/*cartes-images de la 2ème colonne. Dimension de l'image dans la colonne 2*/
+
+.carte_activitées_2_1 .carte-image {
+    height: 195px;
+    position: relative;
+    overflow: hidden;
+    /*On fixe la position de notre élément en relative car il va contenir des éléments absolute à l’intérieur de lui.*/
+    border-radius: 15px 15px 0px 0px;
+}
+
+.carte_activitées_2_2 .carte-image {
+    height: 115px;
+    position: relative;
+    /*On fixe la position de notre élément en relative car il va contenir des éléments absolute à l’intérieur de lui.*/
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+/*cartes-images de la 4ème colonne*/
+
+.carte_activitées_4_1 .carte-image,
+.carte_activitées_4_2 .carte-image {
+    height: 160px;
+    position: relative;
+    /*On fixe la position de notre élément en relative car il va contenir des éléments absolute à l’intérieur de lui.*/
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.carte_activitées_2_1 img,
+.carte_activitées_2_2 img,
+.carte_activitées_4_1 img,
+.carte_activitées_4_2 img {
+    width: 100%;
+    height: 100%;
+    /*centrer une image par rapport à sa taille et à son élément parent*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+
+/*Effet de transition aux images dans activités*/
+
+#Activitées .carte_activitées:hover .carte-image img,
+#Activitées .carte_activitées_2_1:hover .carte-image img,
+#Activitées .carte_activitées_2_2:hover .carte-image img,
+#Activitées .carte_activitées_4_1:hover .carte-image img,
+#Activitées .carte_activitées_4_2:hover .carte-image img {
+    object-fit: contain;
+}
+
+
+/*Footer*/
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    background-color: #F2F2F2;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    border-radius: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.liste-footer {
+    margin-right: 12%;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer h4 {
+    padding-left: 40px;
+}
+
+footer li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*Media queries pour les tailles d'écran sur à 769. Pour version desktop et tablettes
+Objectif : Afficher le logo Booki et le navigateur à côté, 
+et ne pas autoriser les filtres à aller à la ligne' */
+
+@media screen and (min-width: 769px) {
+    #Haut_de_page {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .Filtres {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    /*Ne pas afficher l'espace de recherche prévu pour téléphone si l'écran est sup à 768 px  et vice versa*/
+    .Espace_de_recherche_téléphone {
+        display: none;
+    }
+}
+
+
+/*Seulement pour les versions Desktop*/
+
+@media screen and (min-width: 992px) {
+    /*Mettre les 2 sections Herbergements et les plus populaires à côté pour les formats desktop*/
+    #Hébergments_Les_plus_populaires {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/*Version Mobile*/
+
+@media screen and (max-width: 768px) {
+    /*Placer le logo au centre de la page*/
+    #Haut_de_page img {
+        display: block;
+        margin: 0px auto;
+        padding-left: 50px;
+    }
+    /*Etendre le navigateur sur toute la largeur*/
+    nav {
+        width: 100%;
+        font-size: large;
+    }
+    /*Etendre le navigateur sur toute la largeur*/
+    /*Mettre un padding pour ensuite mettre les bordures bleu*/
+    nav a {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        border-bottom: 3px #F2F2F2 solid;
+    }
+    /*Effet au survol*/
+    nav a:hover {
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+        color: #0065FC;
+    }
+    /*Centrer le h3 et le premier paragraphe*/
+    h3,
+    p {
+        text-align: center;
+    }
+    /*Partie contenant les Filtres*/
+    .Filtres_sans_h2 {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /*Ne pas afficher l'espace de recherche prévu pour version desktop et tablette */
+    .Espace_de_recherche {
+        display: none;
+    }
+    .Espace_de_recherche_téléphone {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    /*Placer les Sections 1 et 2 l'une en dessous de l'autre*/
+    #Hébergments_Les_plus_populaires {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Placer la section populaire en haut*/
+    #Les_plus_populaires {
+        order: -1;
+    }
+    /*Espace(margin) entre les différentes section*/
+    #Hébergements,
+    #Les_plus_populaires,
+    #Activitées {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /*Les cartes sont placés en colonne*/
+    #Hébergements {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /*En colonne*/
+        justify-content: center;
+        /*Centrer les cartes*/
+        align-items: center;
+        /*Centrer les cartes*/
+        align-self: center;
+        background-color: white;
+        /*Pas de fond*/
+        padding: 0px;
+    }
+    .Hébergements_cartes {
+        display: flex;
+        flex-direction: column;
+        /*En colonne*/
+        justify-content: center;
+        /*Centrer les cartes*/
+        align-items: center;
+        width: 100%;
+    }
+    /*Style des cartes pour la version mobile*/
+    #Hébergements .carte {
+        width: 90%;
+        max-width: 400px;
+        /*max width afin de garder une proportion correction*/
+        margin: 10px;
+        height: 250px;
+        background-color: white;
+        box-shadow: 0px 5px 20px #999;
+        border-radius: 15px 15px 15px 15px;
+    }
+    /*Placer les étoiles au bon endroit(les baisser)*/
+    #Hébergements .carte-corp {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #Hébergements h2 {
+        display: flex;
+        justify-content: flex-start;
+    }
+    /*Afficher les cartes les plus populaire horizalement, et les agrandir pour qu'elles prennent tout l'espace dispo*/
+    .cartes_Les_plus_populaires {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #Les_plus_populaires {
+        border-radius: 0%;
+        width: 100%;
+    }
+    #Les_plus_populaires h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #Les_plus_populaires .nb_étoile {
+        margin-top: 80px;
+    }
+    /*Agrandir les cartes de la section Populaire pour les petits écrans  */
+    #Les_plus_populaires .carte_popu {
+        width: 90%;
+        /**/
+        max-width: 400px;
+        margin: 15px;
+        height: 180px;
+        background-color: white;
+        box-shadow: 0px 5px 20px #999;
+        border-radius: 15px 15px 15px 15px;
+        display: flex;
+    }
+    /*Section Activitées*/
+    /*Creer une seule et meme carte pour les petits écrans*/
+    /*Affichage en colonne*/
+    #Activitées {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Margin pour les titres des cartes qui avaient tendance à dépasser */
+    #Activitées .carte-titre {
+        margin-top: -5px;
+    }
+    /*En colonne et centrée */
+    .Activitées_bloc_1,
+    .Activitées_bloc_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    /*En colonne et centrée */
+    .Cartes_activitées,
+    .activitées_colonne_2,
+    .activitées_colonne_4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    /*Style des cartes*/
+    .activitées_colonne_1,
+    .carte_activitées_2_1,
+    .carte_activitées_2_2,
+    .activitées_colonne_3,
+    .carte_activitées_4_1,
+    .carte_activitées_4_2 {
+        width: 90%;
+        max-width: 400px;
+        margin: 15px;
+        height: 250px;
+        background-color: white;
+        box-shadow: 0px 5px 20px #999;
+        border-radius: 15px 15px 15px 15px;
+    }
+    /*Cartes images*/
+    .carte_activitées .carte-image,
+    .carte_activitées_2_1 .carte-image,
+    .carte_activitées_2_2 .carte-image,
+    .carte_activitées_4_1 .carte-image,
+    .carte_activitées_4_2 .carte-image {
+        height: 210px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px 15px 0px 0px;
+    }
+    #Activitées .carte-image img,
+    .carte_activitées_2_1 img,
+    .carte_activitées_2_2 img,
+    .carte_activitées_4_1 img,
+    .carte_activitées_4_2 img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px 15px 0px 0px;
+    }
+    /*En colonne*/
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+/*Version tablette */
+
+@media screen and (min-width:769px) and (max-width: 992px) {
+    /*Afficher le titre "Filtre" au dessus des Filtres*/
+    .Filtres {
+        width: 100%;
+        flex-direction: column;
+    }
+    /*Centrer*/
+    .Titre-Filtres {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .Filtres_sans_h2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    /*Enlever la marge utilisée pour le format desktop*/
+    main h2 {
+        margin-left: 0px;
+    }
+    /*Posiitonnement en colonne des 2 premières sections*/
+    #Hébergments_Les_plus_populaires {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /*Mettre les plus populaires au dessus de hébergement*/
+    #Les_plus_populaires {
+        order: -1;
+    }
+    /*Centrer les titres pour les 3 sections*/
+    .intro_Les_plus_populaires h2,
+    #Hébergements h2,
+    #Activitées h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* Etendre les section hébergement et les plus populaires sur toute la largeur de l'écran*/
+    #Les_plus_populaires {
+        width: 100%;
+        margin-bottom: 50px;
+        /*Espace entre les sections 1 et 2 */
+    }
+    #Hébergements {
+        width: 100%;
+        height: fit-content;
+    }
+    /* Agrandir les cartes dans hebergements*/
+    #Hébergements .carte {
+        width: 45%;
+        /*2 cartes par lignes*/
+        max-width: 400px;
+        margin: 10px;
+        height: 250px;
+        background-color: white;
+        box-shadow: 0px 5px 20px #999;
+        border-radius: 15px 15px 15px 15px;
+    }
+    /*Carte corp*/
+    #Hébergements .carte-corp {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cartes_Les_plus_populaires {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #Les_plus_populaires .carte_popu {
+        width: 100%;
+        margin: 15px;
+        height: 300px;
+        background-color: white;
+        box-shadow: 0px 5px 20px #999;
+        border-radius: 15px;
+    }
+    #Les_plus_populaires a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #Activitées .carte-titre {
+        height: 40px;
+        text-align: left;
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+    #Les_plus_populaires .carte-image {
+        height: 65%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    #Les_plus_populaires .carte-image img {
+        border-radius: 15px 15px 0px 0px;
+    }
+    #Les_plus_populaires .nb_étoile {
+        margin-top: -20px;
+    }
+    #Les_plus_populaires .carte-corp {
+        width: 100%;
+        height: 35%;
+    }
+    #Les_plus_populaires .carte_popu,
+    .Cartes_activitées {
+        flex-direction: column;
+    }
+    .Activitées_bloc_1,
+    .Activitées_bloc_2 {
+        width: 100%;
+    }
+    .activitées_colonne_4 {
+        order: -1;
+    }
+}
+
+
+/*Retrecir la hauteur des images pour les ecrans 
+< 275 px afin de garder une proportion l/h des 
+cartes raisonnable*/
+
+
+/*Modifier apparence et position du point d'information pour les petits écrans*/
+
+@media screen and (max-width:489px) {
+    .info i {
+        height: 25px;
+        width: 25px;
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+}
